@@ -1,3 +1,3 @@
 # filejack
 
-Do File Operations.
+Do Better File Operations.
