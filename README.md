@@ -4,7 +4,6 @@ Do Better File Operations.
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/plsankar/filejack/npm-publish.yml)
-![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/plsankar/filejack)
 ![npm](https://img.shields.io/npm/dw/filejack)
 ![GitHub issues](https://img.shields.io/github/issues/plsankar/filejack)
 ![GitHub package.json dynamic](https://img.shields.io/github/package-json/version/plsankar/filejack)
