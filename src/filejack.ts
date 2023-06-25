@@ -4,7 +4,7 @@ import boxen from "boxen";
 import figlet from "figlet";
 
 console.log(
-    boxen(figlet.textSync("opdo"), {
+    boxen(figlet.textSync("filejack"), {
         padding: 1,
     })
 );

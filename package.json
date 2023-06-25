@@ -1,9 +1,9 @@
 {
-  "name": "opdo",
+  "name": "filejack",
   "description": "Do File Operations",
   "version": "0.0.1",
   "type": "module",
-  "main": "dist/opdo.js",
+  "main": "dist/filejack.js",
   "author": {
     "name": "plsankar",
     "url": "https://github.com/plsankar"
@@ -25,6 +25,6 @@
     "figlet": "^1.6.0"
   },
   "bin": {
-    "opdo": "./dist/opdo.js"
+    "filejack": "./dist/filejack.js"
   }
 }
