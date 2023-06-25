@@ -8,3 +8,5 @@ console.log(
         padding: 1,
     })
 );
+
+console.log("Do File Operations.");
