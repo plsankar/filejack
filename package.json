@@ -8,6 +8,10 @@
     "name": "plsankar",
     "url": "https://github.com/plsankar"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plsankar/filejack.git"
+  },
   "files": [
     "dist"
   ],
@@ -26,5 +30,10 @@
   },
   "bin": {
     "filejack": "./dist/filejack.js"
-  }
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/plsankar/filejack/issues"
+  },
+  "homepage": "https://github.com/plsankar/filejack#readme"
 }
