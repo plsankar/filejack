@@ -16,7 +16,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "npx tsc",
+    "build": "tsc",
     "prepublish": "npm run build"
   },
   "devDependencies": {
