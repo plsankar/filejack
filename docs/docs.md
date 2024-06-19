@@ -1,6 +1,6 @@
-# filejack
+# Get Started
 
-File Operations CLI - Do Better File Operations.
+Do Better File Operations.
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/plsankar/filejack/npm-publish.yml)
@@ -14,19 +14,33 @@ File Operations CLI - Do Better File Operations.
 
 Install filejack with npm
 
-```bash
-  npm install filejack
+::: code-group
+
+```sh [npm]
+npm install filejack
 ```
+
+```sh [pnpm]
+pnpm install filejack
+```
+
+```sh [yarn]
+yarn add filejack
+```
+
+:::
 
 ## Usage
 
 Run `filejack` in the bash/terminal
 
-```bash
+```sh
 filejack
+```
 
-// or
+or
 
+```sh
 npx filejack
 ```
 
