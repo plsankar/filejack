@@ -6,9 +6,6 @@ hero:
     name: "Filejack"
     text: "File Operations CLI"
     tagline: Do Better File Operations
-    image:
-        src: /screenshot.png
-        alt: Filejack
     actions:
         - theme: brand
           text: Get Started
