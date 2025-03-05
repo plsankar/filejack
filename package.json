@@ -1,7 +1,7 @@
 {
   "name": "filejack",
   "description": "Do File Operations",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "main": "dist/filejack.js",
   "author": {
@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "boxen": "^7.1.1",
+    "chalk": "4",
     "figlet": "^1.8.0",
     "inquirer": "^9.3.7",
     "moment": "^2.30.1"

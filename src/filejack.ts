@@ -2,48 +2,43 @@
 
 import boxen from "boxen";
 import figlet from "figlet";
-import inquirer, { Answers } from "inquirer";
-import { organizeDir, organzierQuestions } from "./organizer.js";
+import inquirer from "inquirer";
+import { OrganizeByType } from "./ classes/organize-by-type.class.js";
 
-const banner = [figlet.textSync("filejack"), "Do File Operations!."];
-
-console.log(
-    boxen(banner.join("\n"), {
+function welcome() {
+    const banner = [figlet.textSync("filejack"), "Do File Operations!."];
+    const box = boxen(banner.join("\n"), {
         padding: 1,
         align: "center",
-    })
-);
+    });
+    console.log(box);
+}
 
-function menuQuestion(): Promise<Answers> {
-    const questions = [
+async function main() {
+    welcome();
+
+    const tasks = [new OrganizeByType()];
+
+    const menuQuestions = [
         {
             type: "list",
             name: "action",
             message: "What do you want to do?",
-            choices: [
-                {
-                    name: "Clean Empty Folders",
-                    value: 0,
-                },
-                {
-                    name: "Oraganize Files",
-                    value: 1,
-                },
-            ],
+            choices: tasks.map((task) => task.menu()),
         },
     ];
-    return inquirer.prompt(questions);
-}
+    const menuAnswers = await inquirer.prompt(menuQuestions);
 
-async function run() {
-    const menuAnswers = await menuQuestion();
     const { action } = menuAnswers;
-    if (action == 1) {
-        const { log, date } = await organzierQuestions().then();
-        organizeDir(process.cwd(), log, date);
-    } else {
-        console.log("Coming Soon");
+
+    const choosenTask = tasks.find((task) => task.menu().value === action);
+
+    if (!choosenTask) {
+        console.log("Invalid Task");
+        return;
     }
+
+    choosenTask.run();
 }
 
-run();
+main();
