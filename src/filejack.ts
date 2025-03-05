@@ -3,7 +3,7 @@
 import boxen from "boxen";
 import figlet from "figlet";
 import inquirer from "inquirer";
-import { OrganizeByType } from "./ classes/organize-by-type.class.js";
+import { OrganizeByType } from "./classes/organize-by-type.class.js";
 
 function welcome() {
     const banner = [figlet.textSync("filejack"), "Do File Operations!."];
